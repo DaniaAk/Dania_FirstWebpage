@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Blanka-Regular";
+  src: url(Blanka-Regular.otf);
+  font-weight: bold;
+}
+
+body {
+  font-family: "Blanka-regular";
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #000;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.section-one-img {
+  max-width: 600px;
+}
+
+.section-one-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section-one-heading {
+  font-size: 4rem;
+}
+
+.section-two {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.section-two-heading {
+  font-size: 2rem;
+  line-height: 1.6;
+  word-spacing: 30px;
+}
+
+.section-two-img {
+  max-width: 500px;
+  margin-top: 150px;
+}
+
+.section-two-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 992px) {
+  .section-one-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-two-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-two-img {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-one-img {
+    width: 80%;
+  }
+  .section-two-img {
+    width: 90%;
+  }
+}
